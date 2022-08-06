@@ -1,6 +1,6 @@
 /*-------------My normalize------------------*/
 
-*,*::before,*::after{box-sizing:border-box;}
+*,*::before,*::after{box-sizing:border-box; font-family: 'Roboto', sans-serif}
 a{text-decoration:none; color:inherit; cursor:pointer;}
 button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
 figure{margin:0;}
@@ -11,3 +11,11 @@ p{margin:0;}
 cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 
+/*------------------Basics------------------------------*/
+
+.page_wrapper{
+    width: auto;
+    margin: auto;
+    max-width: 2000px;
+    letter-spacing: 0.01em;      
+}
