@@ -1,11 +1,22 @@
 header{
     width: 100%;
-    > .logo{
-        box-shadow: inset #c8c8d1 0px -3px 3px 0px;
+    .logo{
+        display: flex;
         padding: 30px 0 15px;
-        text-align: center;
-        > img{
-            width: 45%;        
+        > .logo__image{
+            margin: auto;
+            width: 45%;
+            min-width: 150px;
+        }
+        &__icon{
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            font-size: 2em;
+            color: #333333;
+            &--index{
+                display: none;
+            }
         }
     }
 }
