@@ -1,14 +1,13 @@
 /*-------------My normalize------------------*/
 
-*,*::before,*::after{box-sizing:border-box; font-family: 'Roboto', sans-serif}
+*,*::before,*::after{box-sizing:border-box;}
 a{text-decoration:none; color:inherit; cursor:pointer;}
 button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
 figure{margin:0;}
 input::-moz-focus-inner {border:0; padding:0; margin:0;}
-ul, ol, dd{margin:0; padding:0; list-style:none;}
+ul{margin:0; padding:0; list-style-position: outside; list-style-type: none;}
 h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
 p{margin:0;}
-cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 
 /*------------------Basics------------------------------*/
@@ -18,4 +17,15 @@ fieldset{border-width:0; padding:0; margin:0;}
     margin: auto;
     max-width: 2000px;
     letter-spacing: 0.01em;      
+}
+
+body{
+    width: 100%;
+    margin: 0; 
+    font-family: 'Roboto', sans-serif;
+}
+
+body img{
+    object-fit: cover;
+    width: 100%;
 }
