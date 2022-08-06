@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Ohmyfood! - Accueil</title>
+        <title>Ohmyfood!</title>
         <meta charset="utf-8">
-        <meta name="description" content="Réservez en direct dans des restaurants d'exception">
-        <meta name="keywords" content="standing, reservation, restaurant, exception, gastronomique">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <script src="https://kit.fontawesome.com/5bc8c0d332.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="page-wrapper">
@@ -22,15 +16,15 @@
                 </div>
             </header>
             <main>
-        <!--Gnrl-nav : ---------------------------------------------------------------------------------------------->
+        <!--Gnrl-nav : ______________________________________________________________________________________________-->
                 <nav>
-            <!--Location : ---------------------------------------------------------------------------------------------->
+            <!--Location : ____________________________________________________________________________________________-->
                     <div class="location">
                         <i class="fa-solid fa-location-dot"></i>
                         <form>
                             <input type="search" name="city_search" id="city" placeholder="Paris, Belleville">
                         </form>
-                        <button name="search" type="button">Rechercher</button>
+                        <button class="btn btn--full-width">Rechercher</button>
                     </div>
                     <div class="titles">
                         <h1>Réservez le menu qui vous convient</h1>
@@ -39,105 +33,97 @@
                     <a href="#restaurants"><span>Explorer nos restaurants</span></a>
                     <div class="instructions">
                         <h2>Fonctionnement</h2>
-                        <div class="instructions--card">
-                            <div class="instructions--card__number">1</div>
-                            <div class="instructions--card__box">
+                        <div class="instructions-card">
+                            <div class="instructions-card__number">1</div>
+                            <div class="instructions-card__box">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                                 <span>Choisissez un restaurant</span>
                             </div>
                         </div>
-                        <div class="instructions--card">
-                            <div class="instructions--card__number">2</div>
-                            <div class="instructions--card__box">
+                        <div class="instructions-card">
+                            <div class="instructions-card__number">2</div>
+                            <div class="instructions-card__box">
                                 <i class="fa-solid fa-list"></i>
                                 <span>Composez votre menu</span>
                             </div>
                         </div>
-                        <div class="instructions--card">
-                            <div class="instructions--card__number">3</div>
-                            <div class="instructions--card__box">
+                        <div class="instructions-card">
+                            <div class="instructions-card__number">3</div>
+                            <div class="instructions-card__box">
                                 <i class="fa-solid fa-store"></i>
                                 <span>Dégustez au restaurant</span>
                             </div>
                         </div>
                     </div>
                 </nav>
-        <!--Restaurants : ------------------------------------------------------------------------------------------->
-                <section id="restaurants">
+        <!--Restaurants : _________________________________________________________________________________________-->
+                <section id="restaurants-preview">
                     <h2>Restaurants</h2>
-                    <div class="card">
+                    <div class="resto-prev">
                         <a href="./menu-1.html">
-                            <div class="card--image">
-                                <img class="card--image__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
-                                <span class="card--image__mention">Nouveau</span>
+                            <div class="resto-prev__image resto-prev__image--new">
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
+                                <span>Nouveau</span>
                             </div>
-                            <div class="card--body">
-                                <div class="card--body__title">
-                                    <h3>La palette du goût</h3>
-                                </div>
-                                <div class="card--body__excerpt">
-                                    <span>Ménilmontant</span>
-                                </div>
-                                <div class="card--body__like">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
+                            <div class="resto-prev__title">
+                                <h3>La palette du goût</h3>
+                            </div>
+                            <div class="resto-prev__byline">
+                                <span>Ménilmontant</span>
+                            </div>
+                            <div class="resto-prev__like">
+                                <i class="fa-regular fa-heart"></i>
                             </div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="resto-prev">
                         <a href="./menu-3.html">
-                            <div class="card--image">
-                                <img class="card--image__img" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                                <span class="card--image__mention">Nouveau</span>
+                            <div class="resto-prev__image card__image--new">
+                                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                                <span ">Nouveau</span>
                             </div>
-                            <div class="card--body">
-                                <div class="card--body__title">
-                                    <h3>La note enchantée</h3>
-                                </div>
-                                <div class="card--body__excerpt">
-                                    <span>Charonne</span>
-                                </div>
-                                <div class="card--body__like">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
+                            <div class="resto-prev__title">
+                                <h3>La note enchantée</h3>
+                            </div>
+                            <div class="resto-prev__byline">
+                                <span>Charonne</span>
+                            </div>
+                            <div class="resto-prev__like">
+                                <i class="fa-regular fa-heart"></i>
                             </div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="resto-prev">
                         <a href="./menu-4.html">
-                            <div class="card--image">
-                                <img class="card--image__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-                                <span class="card--image__mention">Nouveau</span>
+                            <div class="resto-prev__image">
+                                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                                <span>Nouveau</span>
                             </div>
-                            <div class="card--body">
-                                <div class="card--body__title">
-                                    <h3>À la française</h3>
-                                </div>
-                                <div class="card--body__excerpt">
-                                    <span>Cité Rouge</span>
-                                </div>
-                                <div class="card--body__like">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
+                            <div class="resto-prev__title">
+                                <h3>À la française</h3>
+                            </div>
+                            <div class="resto-prev__byline">
+                                <span>Cité Rouge</span>
+                            </div>
+                            <div class="resto-prev__like">
+                                <i class="fa-regular fa-heart"></i>
                             </div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="resto-prev">
                         <a href="./menu-2.html">
-                            <div class="card--image">
-                                <img class="card--image__img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-                                <span class="card--image__mention">Nouveau</span>
+                            <div class="resto-prev__image">
+                                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                                <span>Nouveau</span>
                             </div>
-                            <div class="card--body">
-                                <div class="card--body__title">
-                                    <h3>Le délice des sens</h3>
-                                </div>
-                                <div class="card--body__excerpt">
-                                    <span>Folie-Méricourt</span>
-                                </div>
-                                <div class="card--body__like">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
+                            <div class="resto-prev__title">
+                                <h3>Le délice des sens</h3>
+                            </div>
+                            <div class="resto-prev__byline">
+                                <span>Folie-Méricourt</span>
+                            </div>
+                            <div class="resto-prev__like">
+                                <i class="fa-regular fa-heart"></i>
                             </div>
                         </a>
                     </div>
