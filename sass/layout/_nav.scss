@@ -31,25 +31,6 @@
     }
 }
 
-.btn{
-    background-color: $background;
-    padding-bottom: 60px;
-    > a{
-        display: flex;
-        color: white;
-        padding: 1em 2.5em;
-        font-size: 1.1em;
-        text-align: center;
-        background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
-        width: min-content;
-        white-space: nowrap;
-        margin: auto;
-        border-radius: 30px;
-        box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
-        cursor: pointer;
-    }
-}
-
 .instructions{
     padding: 50px 25px;
     display: flex;

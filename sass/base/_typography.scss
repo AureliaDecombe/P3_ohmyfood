@@ -22,10 +22,30 @@ h2{
 
 h3{
     font-size: 1.3em;
-    font-weight: bold;
-    padding-bottom: 5px;
+    @include hx-style__menu;
+}
+
+h4{
+    font-size: 1.1em;
+    @include hx-style__menu;
 }
 
 li{
     font-size: 1.1em;
+}
+
+.menu-title{
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.25em;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+
+.menu h3{
+    font-weight: lighter;
+    padding: 0;
+}
+
+aside{
+    @include hx-style__menu;
 }
