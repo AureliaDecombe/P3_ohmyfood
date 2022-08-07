@@ -1,0 +1,62 @@
+#restaurants-preview{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 25px;
+    background: $background;
+    > h2{
+        padding-bottom: 0;
+    }
+    .resto-prev{
+        box-shadow: 0px 3px 10px rgb(102 102 102 / 18%);
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+        height: 420px;
+        &__image{
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            } 
+            >span{
+                display: none;
+            }
+            &.resto-prev__image--new{
+                >span{
+                    display: block;
+                    width: 100px;
+                    height: auto;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    text-align: center;
+                    font-weight: bold;
+                    padding: 5px;
+                    border-radius: 2px; 
+                    @include new-shadow;                  
+                }
+            }
+        }
+        &__title{
+            padding: 20px;
+            > span{
+                font-size: 1.2em;
+            }
+        }
+        &__like{
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            font-size: xx-large;
+        }    
+    }
+}
+

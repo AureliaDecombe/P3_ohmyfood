@@ -1,0 +1,14 @@
+@mixin instruction-card__typo {
+    padding: 0 1em;
+    font-size: x-large;    
+}
+
+@mixin new-shadow($color: lightness-shift($color-tertiary)){
+    color: $color;
+    background-color: $color-tertiary;
+}
+
+@mixin hx-style {
+    font-weight: bold;
+    padding-bottom: 15px;
+}

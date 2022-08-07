@@ -1,2 +1,101 @@
-.nav {
+.location{
+    display: flex;
+    width: 100%;
+    background-color: $input-background;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0em .1em .5em #c8c8d1;
+    > input{
+        width: 200px;
+        padding-left: 20px;
+        border: none;
+        background-color: $input-background;
+        font-size: 1.3em;
+        font-weight: bold;
+        height: 45px;
+        letter-spacing: -0.5px;
+        color: $text-alternative;
+    }            
 }
+
+.titles{
+    text-align: center;
+    padding: 40px;
+    background-color: $background;
+    > h2{
+        color: $text-alternative;
+        font-weight: normal;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.btn{
+    background-color: $background;
+    padding-bottom: 60px;
+    > a{
+        display: flex;
+        color: white;
+        padding: 1em 2.5em;
+        font-size: 1.1em;
+        text-align: center;
+        background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
+        width: min-content;
+        white-space: nowrap;
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
+        cursor: pointer;
+    }
+}
+
+.instructions{
+    padding: 50px 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;  
+    .instructions-card{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+        padding: 30px;
+        box-shadow: #dbdbdf 1px 4px 10px 3px;
+        background-color: $background;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        position: relative;
+        &__number{
+            background: $color-primary;
+            color: white;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            position: absolute;
+            left: -1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__box{
+            font-size: 1.2em;
+            font-weight: bold;  
+            display: flex;
+            align-items: center;      
+            &.instructions-card__box--alternative{
+                > i{
+                    color: $text-alternative;
+                    @include instruction-card__typo;
+                }
+            }
+            &.instructions-card__box--primary{
+                > i{
+                    color: $color-primary;
+                    @include instruction-card__typo;
+                }
+            }
+        }
+    }  
+}
+
