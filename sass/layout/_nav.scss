@@ -82,18 +82,16 @@
             font-size: 1.2em;
             font-weight: bold;  
             display: flex;
-            align-items: center;      
-            &.instructions-card__box--alternative{
-                > i{
-                    color: $text-alternative;
-                    @include instruction-card__typo;
-                }
+            align-items: center;     
+            > i{
+                color: $text-alternative;
+                @include instruction-card__typo;
             }
-            &.instructions-card__box--primary{
-                > i{
-                    color: $color-primary;
-                    @include instruction-card__typo;
-                }
+        }
+        &:hover{
+            background: #ededed;
+            i{
+                color: $color-primary;
             }
         }
     }  

@@ -210,15 +210,16 @@ header .logo__icon--index {
   display: flex;
   align-items: center;
 }
-.instructions .instructions-card__box.instructions-card__box--alternative > i {
+.instructions .instructions-card__box > i {
   color: #565656;
   padding: 0 1em;
   font-size: x-large;
 }
-.instructions .instructions-card__box.instructions-card__box--primary > i {
+.instructions .instructions-card:hover {
+  background: #ededed;
+}
+.instructions .instructions-card:hover i {
   color: #9356DC;
-  padding: 0 1em;
-  font-size: x-large;
 }
 
 #restaurants-preview {
@@ -239,10 +240,11 @@ header .logo__icon--index {
   border-radius: 25px;
   overflow: hidden;
   position: relative;
-  height: 420px;
+  height: 320px;
+  background-color: #fff;
 }
 #restaurants-preview .resto-prev__image {
-  height: 320px;
+  height: 220px;
   overflow: hidden;
   position: relative;
 }
@@ -270,6 +272,7 @@ header .logo__icon--index {
   background-color: #99E2D0;
 }
 #restaurants-preview .resto-prev__title {
+  background-color: #fff;
   padding: 20px;
 }
 #restaurants-preview .resto-prev__title > span {

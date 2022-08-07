@@ -8,6 +8,11 @@
     background-color: $color-tertiary;
 }
 
+@mixin instructions-background($color: lightness-shift($background)){
+    color: $color;
+    background-color: $background;
+}
+
 @mixin hx-style {
     font-weight: bold;
     padding-bottom: 15px;

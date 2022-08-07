@@ -15,9 +15,10 @@
         border-radius: 25px;
         overflow: hidden;
         position: relative;
-        height: 420px;
+        height: 320px;
+        background-color: #fff;
         &__image{
-            height: 320px;
+            height: 220px;
             overflow: hidden;
             position: relative;
             img{
@@ -46,6 +47,7 @@
             }
         }
         &__title{
+            background-color: #fff;
             padding: 20px;
             > span{
                 font-size: 1.2em;
