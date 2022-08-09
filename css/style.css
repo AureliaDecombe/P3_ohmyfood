@@ -148,23 +148,24 @@ aside {
 }
 
 .fancy-checkbox {
+  display: block;
   position: absolute;
   right: 30px;
   bottom: 30px;
   font-size: xx-large;
   cursor: pointer;
+  transition: all 0.5s;
   transform: scale(1);
   transition-property: transform;
-  transition-duration: 500ms;
 }
 .fancy-checkbox:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
-.fancy-checkbox > input[type=checkbox], .fancy-checkbox .checked {
+.fancy-checkbox > input[type=checkbox], .fancy-checkbox .fancy-checkbox--checked {
   display: none;
 }
-.fancy-checkbox > input[type=checkbox]:checked ~ .checked, .fancy-checkbox .checked:checked ~ .checked {
-  display: flex;
+.fancy-checkbox > input[type=checkbox]:checked ~ .fancy-checkbox--checked, .fancy-checkbox .fancy-checkbox--checked:checked ~ .fancy-checkbox--checked {
+  display: block;
   cursor: pointer;
   background: linear-gradient(170deg, #FF79DA 5%, #9356DC 95%);
   -webkit-background-clip: text;
@@ -173,7 +174,7 @@ aside {
   -moz-webkit-background-clip: text;
   -moz-webkit-text-fill-color: transparent;
 }
-.fancy-checkbox > input[type=checkbox]:checked ~ .unchecked, .fancy-checkbox .checked:checked ~ .unchecked {
+.fancy-checkbox > input[type=checkbox]:checked ~ .fancy-checkbox--unchecked, .fancy-checkbox .fancy-checkbox--checked:checked ~ .fancy-checkbox--unchecked {
   display: none;
 }
 
@@ -293,6 +294,8 @@ header .logo__icon--index {
   padding-bottom: 0;
 }
 #restaurants-preview .resto-prev {
+  display: flex;
+  flex-flow: column wrap;
   box-shadow: 0px 3px 10px rgba(102, 102, 102, 0.18);
   width: 100%;
   margin-bottom: 30px;
@@ -336,6 +339,11 @@ header .logo__icon--index {
 }
 #restaurants-preview .resto-prev__title > span {
   font-size: 1.2em;
+}
+#restaurants-preview .resto-prev.like-checkbox {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
 }
 
 footer {

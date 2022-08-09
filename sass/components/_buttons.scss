@@ -23,32 +23,33 @@
 }
 
 .fancy-checkbox{
+    display: block;
     position: absolute;
     right: 30px;
     bottom: 30px;
     font-size: xx-large;
-    cursor: pointer;   
+    cursor: pointer;  
+    transition: all (.5s); 
     transform: scale(1);
     transition-property: transform;
-    transition-duration: 500ms;
     &:hover{
-      transform: scale(1.15);
+        transform: scale(1.1);
     }
-    > input[type="checkbox"], .checked{
-      display: none;    
-      &:checked~.checked{
-        display: flex;
-        cursor: pointer;  
-        background: $btn-background;  
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;        
-       -moz-background: $btn-background;     
-       -moz-webkit-background-clip: text;
-        -moz-webkit-text-fill-color: transparent;
-      }
-      &:checked~.unchecked {
-        display: none;       
-      }
+    > input[type="checkbox"], .fancy-checkbox--checked{
+        display: none;    
+        &:checked~.fancy-checkbox--checked{
+            display: block;
+            cursor: pointer;  
+            background: $btn-background;  
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;        
+            -moz-background: $btn-background;     
+            -moz-webkit-background-clip: text;
+            -moz-webkit-text-fill-color: transparent;
+        }
+        &:checked~.fancy-checkbox--unchecked{
+            display: none;       
+        }
     }   
 }
 
