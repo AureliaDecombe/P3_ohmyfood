@@ -1,11 +1,11 @@
 /*--------------Colors--------------------------------*/
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 $text-alternative: #565656;
 
 $background: #F6F6F6;
 $input-background: #EAEAEA;
 $footer-background: #353535;
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-
+$btn-background: linear-gradient(170deg, $color-secondary 5%, $color-primary 95%);
+$btn-background--hover: linear-gradient(170deg, transparent, $color-secondary 20%, $color-primary 100%);

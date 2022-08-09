@@ -1,18 +1,55 @@
 .btn {
-    background-color: $background;
-    padding-bottom: 60px;
     > a{
         display: flex;
         color: white;
         padding: 1em 2.5em;
         font-size: 1.1em;
         text-align: center;
-        background: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
+        background: $btn-background;
         width: min-content;
         white-space: nowrap;
         margin: auto;
         border-radius: 30px;
         box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
         cursor: pointer;
+        &:hover{
+            @include btn-hover;
+        }
+    }
+    &--main{
+        background: $background;
+        padding: 60px;
     }
 }
+
+.fancy-checkbox{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: xx-large;
+    cursor: pointer;   
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 500ms;
+    &:hover{
+      transform: scale(1.15);
+    }
+    > input[type="checkbox"], .checked{
+      display: none;    
+      &:checked~.checked{
+        display: flex;
+        cursor: pointer;  
+        background: $btn-background;  
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;        
+       -moz-background: $btn-background;     
+       -moz-webkit-background-clip: text;
+        -moz-webkit-text-fill-color: transparent;
+      }
+      &:checked~.unchecked {
+        display: none;       
+      }
+    }   
+}
+
+/*----transition couleurs : http://jsfiddle.net/gn57dkez/---------------*/

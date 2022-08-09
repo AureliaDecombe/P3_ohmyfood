@@ -35,7 +35,7 @@
                         <p>Réservez le menu qui vous convient</p>
                         <h2>Découvrez des restaurants d'exception, séléctionés par nos soins.</h2>
                     </div>
-                    <div class="btn">
+                    <div class="btn btn--main">
                         <a href="#restaurants-preview">Explorer nos restaurants</a>
                     </div>
                     <div class="instructions">
@@ -76,10 +76,18 @@
                                 <h3>La palette du goût</h3>
                                 <span>Ménilmontant</span>
                             </div>
-                            <div class="resto-prev__like">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
                         </a>
+                        <!--Test fancy checkbox
+                            https://waytolearnx.com/2020/02/comment-remplacer-le-checkbox-par-un-icone-fontawesome.html
+                            -----------------------------------------------------------------
+                        <div class="btn--like">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>-->
+                        <label class="fancy-checkbox">
+                            <input type="checkbox"/>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart fa-fade checked"></i>
+                        </label>
                     </div>
                     <div class="resto-prev">
                         <a href="./menu-3.html">
@@ -91,7 +99,7 @@
                                 <h3>La note enchantée</h3>
                                 <span>Charonne</span>
                             </div>
-                            <div class="resto-prev__like">
+                            <div class="btn--like">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </a>
@@ -106,7 +114,7 @@
                                 <h3>À la française</h3>
                                 <span>Cité Rouge</span>
                             </div>
-                            <div class="resto-prev__like">
+                            <div class="btn--like">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </a>
@@ -121,7 +129,7 @@
                                 <h3>Le délice des sens</h3>
                                 <span>Folie-Méricourt</span>
                             </div>
-                            <div class="resto-prev__like">
+                            <div class="btn--like">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </a>
