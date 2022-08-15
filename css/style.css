@@ -138,7 +138,7 @@ aside {
   cursor: pointer;
 }
 .btn > a:hover {
-  background: linear-gradient(170deg, #EAEAEA, #FF79DA 25%, #9356DC 100%);
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.9) 10%, rgba(146, 86, 220, 0.9) 95%);
   box-shadow: rgba(149, 157, 165, 0.4) 1px 8px 10px 6px;
 }
 .btn--main {
@@ -267,12 +267,10 @@ footer ul li i {
 }
 
 .titles {
-  text-align: center;
   padding: 40px;
   background-color: #F6F6F6;
 }
 .titles > h2 {
-  color: #565656;
   font-weight: normal;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -403,6 +401,7 @@ footer ul li i {
   top: 200px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  white-space: nowrap;
 }
 .menu .menu-title {
   display: flex;
@@ -412,7 +411,6 @@ footer ul li i {
 }
 .menu .menu-composants {
   padding-bottom: 20px;
-  min-width: 380px;
 }
 .menu .menu-composants__title > div {
   width: 50px;

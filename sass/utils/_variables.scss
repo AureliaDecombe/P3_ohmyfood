@@ -1,6 +1,8 @@
 /*--------------Colors--------------------------------*/
 $color-primary: #9356DC;
+$light-primary: rgba(146, 86, 220, 0.9);
 $color-secondary: #FF79DA;
+$light-secondary: rgba(255, 121, 218, 0.9);
 $color-tertiary: #99E2D0;
 $text-alternative: #565656;
 
@@ -8,4 +10,4 @@ $background: #F6F6F6;
 $input-background: #EAEAEA;
 $footer-background: #353535;
 $btn-background: linear-gradient(170deg, $color-secondary 5%, $color-primary 95%);
-$btn-background--hover: linear-gradient(170deg, $input-background, $color-secondary 25%, $color-primary 100%);
+$btn-background--hover: linear-gradient(170deg, $light-secondary 10%, $light-primary 95%);
