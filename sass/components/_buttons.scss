@@ -22,35 +22,55 @@
     }
 }
 
-.fancy-checkbox{
-    display: block;
+.like-checkbox{
     position: absolute;
     right: 30px;
     bottom: 30px;
     font-size: xx-large;
     cursor: pointer;  
-    transition: all (.5s); 
-    transform: scale(1);
-    transition-property: transform;
-    &:hover{
-        transform: scale(1.1);
-    }
-    > input[type="checkbox"], .fancy-checkbox--checked{
-        display: none;    
-        &:checked~.fancy-checkbox--checked{
-            display: block;
-            cursor: pointer;  
-            background: $btn-background;  
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;        
-            -moz-background: $btn-background;     
-            -moz-webkit-background-clip: text;
-            -moz-webkit-text-fill-color: transparent;
+    background: inherit;
+    .fancy-checkbox{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        z-index: 1;
+        > i{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        &:checked~.fancy-checkbox--unchecked{
-            display: none;       
+        input{
+            opacity: 0;
+            width: 30px;
+            height: 30px;
+            z-index: 1;
+            &:checked ~ .fancy-checkbox--unchecked{
+                transition-duration: .5s;
+                opacity: 0;
+            }
+            &:checked ~ .fancy-checkbox--checked{
+                transition-duration: 1s;
+                opacity: 1;
+            }
         }
-    }   
+        &--checked{
+            opacity: 0;
+            transition-duration: 0.5s;
+            background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));/*définition du background*/
+            -webkit-background-clip: text;/*fixation du bgd sur les texte*/
+            -webkit-text-fill-color: transparent;/*mise en transparence du texte*/
+        }
+    }            
+}
+.menu-checkbox{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
 }
 
 /*----transition couleurs : http://jsfiddle.net/gn57dkez/---------------*/
