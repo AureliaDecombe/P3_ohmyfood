@@ -12,20 +12,20 @@ fieldset{border-width:0; padding:0; margin:0;}
 
 /*------------------Basics------------------------------*/
 
-.page_wrapper{
-    width: auto;
-    margin: auto;
-    max-width: 2000px;
-    letter-spacing: 0.01em;      
-}
+
 
 body{
     width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-}
-
-body img{
-    object-fit: contain;
-    width: 100%;
+    .page_wrapper{
+        width: auto;
+        margin: auto;
+        max-width: 2000px;
+        letter-spacing: 0.01em;      
+    }
+    img{
+        object-fit: contain;
+        width: 100%;
+    }
 }

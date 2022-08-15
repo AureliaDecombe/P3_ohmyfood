@@ -70,10 +70,11 @@
             }
         }
         &:hover{
-            background: #ededed;
+            background: lighten($color-secondary, 22%);
             i{
                 color: $color-primary;
             }
+            color: $color-primary;
         }
     }  
 }
