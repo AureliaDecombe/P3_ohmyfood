@@ -16,6 +16,8 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     .menu-title{
         display: flex;
         justify-content: space-between;
