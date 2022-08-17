@@ -5,6 +5,25 @@
     z-index: 1;
     background: radial-gradient(circle, $color-primary, $color-primary 50%, $color-secondary 75%, $color-primary 75%);
     animation: bgd 3s linear forwards;
+    &__title{
+        font-family: $font-logo;
+        @include hx-style;
+        color: $color-tertiary;
+        font-size: 3em;
+        position: absolute;
+        left: calc(100% / 2 - 120px);
+        top: calc(100% / 6);
+    }
+    &__text{
+        display: none;
+        font-family: $font-primary;
+        @include hx-style;
+        color: $color-tertiary;
+        font-size: 2.5em;
+        position: absolute;
+        left: calc(100% / 2 - 300px);
+        bottom: calc(100% / 6);
+    }
     @keyframes bgd {
         0%, 67.5%{
             opacity: 1;
@@ -127,6 +146,7 @@
             border-bottom-right-radius: 50%;
             border-bottom-left-radius: 0;
             transform: rotate(315deg);
+            z-index: 1;
             }
             
             100% {

@@ -27,7 +27,6 @@
     right: 30px;
     bottom: 30px;
     font-size: xx-large;
-    cursor: pointer;  
     background: inherit;
     .fancy-checkbox{
         position: relative;
@@ -49,6 +48,7 @@
             width: 30px;
             height: 30px;
             z-index: 1;
+            cursor: pointer;  
             &:checked ~ .fancy-checkbox--unchecked{
                 transition-duration: .5s;
                 opacity: 0;
@@ -72,5 +72,4 @@
     right: 0;
     bottom: 50px;
 }
-
 /*----transition couleurs : http://jsfiddle.net/gn57dkez/---------------*/
