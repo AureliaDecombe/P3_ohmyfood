@@ -1,3 +1,4 @@
+/*---------------------bouton gnral------------------*/
 .btn {
     > a{
         display: flex;
@@ -22,6 +23,7 @@
     }
 }
 
+/*---------------------checkbox icone coeur----------------------*/
 .like-checkbox{
     position: absolute;
     right: 30px;
@@ -72,4 +74,21 @@
     right: 0;
     bottom: 50px;
 }
-/*----transition couleurs : http://jsfiddle.net/gn57dkez/---------------*/
+
+/*---------------------checkbox plats------------------------*/
+.menu-composants__choice input{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    &:checked ~ .menu-compo__content .menu-compo__content--icone{
+        margin-right: 0;
+        transition: $trans-primary;
+    }            
+    &:checked ~ .menu-compo__content i{
+        margin-right: 0;
+        transition: $trans-primary;
+        transform: rotate(360deg);
+    }
+}
