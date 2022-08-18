@@ -1,10 +1,8 @@
 .location{
-    display: flex;
+    @include flex-full;
     background-color: $input-background;
     height: 60px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 2px 3px #c8c8d1;
+    box-shadow: $shadow-input;
     > input{
         width: 200px;
         padding-left: 20px;
@@ -32,11 +30,9 @@
 
 .instructions{
     padding: 50px 25px;
-    display: flex;
-    flex-flow: column wrap;
+    @include flex-column;
     .instructions-card{
-        display: flex;
-        align-items: center;
+        @include flex-basic;
         margin: auto;
         padding: 30px;
         box-shadow: $shadow-secondary;
@@ -47,20 +43,17 @@
         &__number{
             background: $color-primary;
             color: $color-neutral;
-            width: 2em;
-            height: 2em;
+            width: 33px;
+            height: 33px;
             border-radius: 50%;
             position: absolute;
             left: -18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-full;
         }
         &__box{
             font-size: 1.2em;
             font-weight: bold;  
-            display: flex;
-            align-items: center;     
+            @include flex-basic;   
             > i{
                 color: $text-alternative;
                 @include instruction-card__typo;

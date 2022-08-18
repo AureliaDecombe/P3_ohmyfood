@@ -13,26 +13,22 @@
         box-shadow: $shadow-tertiary;
         &__image{
             height: 180px;
-            overflow: hidden;
-            position: relative;
+            @include image;
             img{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                @include img;
             } 
             >span{
                 display: none;
             }
             &.resto-prev__image--new{
                 >span{
-                    display: block;
-                    width: 100px;
                     position: absolute;
-                    top: 20px;
-                    right: 20px;
+                    display: block;
                     text-align: center;
                     font-weight: bold;
+                    width: 100px;
+                    top: 20px;
+                    right: 20px;
                     padding: 5px;
                     border-radius: 6px; 
                     @include new-shadow;                  

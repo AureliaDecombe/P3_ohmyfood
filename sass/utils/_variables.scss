@@ -1,27 +1,29 @@
-/*--------------Colors--------------------------------*/
+/*----------------------colors-----------------------*/
 $color-primary: #9356DC;
 $light-primary: rgba(146, 86, 220, 0.9);
 $color-secondary: #FF79DA;
 $light-secondary: rgba(255, 121, 218, 0.9);
 $color-tertiary: #99E2D0;
 $color-neutral: #fff;
-
 $text-alternative: #565656;
 
+/*----------------------background-----------------------*/
 $background: #F6F6F6;
 $input-background: #EAEAEA;
 $footer-background: #353535;
 $btn-background: linear-gradient(170deg, $color-secondary 5%, $color-primary 95%);
 $btn-background--hover: linear-gradient(170deg, transparent, $light-secondary 10%, $light-primary 95%);
 
-/*----------------Typo----------------------*/
-$font-primary: 'Roboto', sans-serif;
-$font-logo: 'Shrikhand', sans-serif;
-
-/*---------------Transitions----------------*/
-$trans-primary: all 0.5s ease;
-
-/*----------------Box-shadow----------------*/
+/*----------------------box-shadows-----------------------*/
 $shadow-primary: 2px 2px 10px 1px $background;
 $shadow-secondary: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 $shadow-tertiary: rgba(0, 0, 0, 0.2) 0px 2px 10px;
+$shadow-input: inset 0px 2px 3px #c8c8d1;
+
+/*----------------------typo-----------------------*/
+$font-primary: 'Roboto', sans-serif;
+$font-logo: 'Shrikhand', sans-serif;
+
+/*----------------------transitions-----------------------*/
+$trans-primary: all 0.5s ease;
+
