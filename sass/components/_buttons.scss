@@ -31,26 +31,16 @@
     font-size: xx-large;
     background: inherit;
     .fancy-checkbox{
-        position: relative;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        z-index: 1;
         > i{
             position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         input{
             opacity: 0;
             width: 30px;
             height: 30px;
             z-index: 1;
-            cursor: pointer;  
+            cursor: cell;  
             &:checked ~ .fancy-checkbox--unchecked{
                 transition-duration: .5s;
                 opacity: 0;
@@ -70,7 +60,6 @@
     }            
 }
 .menu-checkbox{
-    position: absolute;
     right: 0;
     bottom: 50px;
 }
