@@ -1,13 +1,10 @@
 .intro{
+    max-height: 300px;
     &__image{
         height: 250px;
-        overflow: hidden;
-        position: relative;
+        @include image;
         img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include img;
         }
     } 
 }
@@ -54,8 +51,8 @@
                 background: $color-neutral;
                 border-radius: 15px;
                 display: flex;
-                min-width: 300px;
                 overflow: hidden;
+                min-width: 300px;
                 &--txt {
                     width: 100%;
                     display: flex;
@@ -72,16 +69,14 @@
                 &--icone {
                     width: 70px;
                     background: $color-tertiary;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex-full;
                     margin-right: -70px;
                     transition: $trans-primary;
                     & > i {
                         color: $color-tertiary;
                         padding: 4px;
                         border-radius: 50%;
-                        background: white;
+                        background: $color-neutral;
                         cursor: pointer;
                         transition: $trans-primary;
                     }

@@ -1,29 +1,58 @@
+/*----------------------------display------------------------------*/
+@mixin flex-basic {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/*-----------------------------typo------------------------------*/
 @mixin instruction-card__typo {
     padding: 0 1em;
     font-size: x-large;    
 }
-
-@mixin new-shadow($color: lightness-shift($color-tertiary)){
-    color: $color;
-    background-color: $color-tertiary;
-}
-
-@mixin instructions-background($color: lightness-shift($background)){
-    color: $color;
-    background-color: $background;
-}
-
 @mixin hx-style {
     font-weight: bold;
     padding-bottom: 15px;
 }
-
 @mixin hx-style__menu {
     font-weight: bold;
     padding-bottom: 5px;
 }
 
+/*----------------------------shadow------------------------------*/
+@mixin new-shadow($color: lightness-shift($color-tertiary)){
+    color: $color;
+    background-color: $color-tertiary;
+}
+
+/*-----------------------------color------------------------------*/
+@mixin instructions-background($color: lightness-shift($background)){
+    color: $color;
+    background-color: $background;
+}
+
+/*----------------------------pseudo------------------------------*/
 @mixin btn-hover {
     background: $btn-background--hover;
     box-shadow: rgb(149 157 165 / 40%) 1px 8px 10px 6px;
+}
+
+/*---------------------------component------------------------------*/
+@mixin image {
+    overflow: hidden;
+    position: relative;
+}
+@mixin img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
