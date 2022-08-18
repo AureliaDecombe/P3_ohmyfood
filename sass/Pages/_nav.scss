@@ -1,11 +1,10 @@
 .location{
     display: flex;
-    width: 100%;
     background-color: $input-background;
     height: 60px;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0em .1em .5em #c8c8d1;
+    box-shadow: inset 0px 2px 3px #c8c8d1;
     > input{
         width: 200px;
         padding-left: 20px;
@@ -22,10 +21,12 @@
 .titles{
     padding: 40px;
     background-color: $background;
+    text-align: center;
     > h2{
         font-weight: normal;
         margin-bottom: 0;
         padding-bottom: 0;
+        color: $text-alternative;
     }
 }
 
@@ -33,26 +34,24 @@
     padding: 50px 25px;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;  
     .instructions-card{
         display: flex;
         align-items: center;
-        width: 95%;
         margin: auto;
         padding: 30px;
-        box-shadow: #dbdbdf 1px 4px 10px 3px;
+        box-shadow: $shadow-secondary;
         background-color: $background;
         border-radius: 20px;
         margin-bottom: 30px;
         position: relative;
         &__number{
             background: $color-primary;
-            color: white;
+            color: $color-neutral;
             width: 2em;
             height: 2em;
             border-radius: 50%;
             position: absolute;
-            left: -1em;
+            left: -18px;
             display: flex;
             align-items: center;
             justify-content: center;
