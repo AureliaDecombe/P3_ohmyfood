@@ -66,6 +66,19 @@
             }
             color: $color-primary;
         }
+    }
+    @media all and (min-width: 768px) and (max-width: 991px){
+        max-width: 500px;
+        margin: auto;
+        h2{
+            text-align: center;
+        }
+    }
+    @media all and (min-width: 992px){
+        @include flex-row;
+        h2{
+            width: 100%;
+            text-align: center;
+        }
     }  
 }
-
