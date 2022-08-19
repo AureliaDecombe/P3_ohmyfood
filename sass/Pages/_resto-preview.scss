@@ -43,5 +43,26 @@
             }
         }  
     }
+    @media all and (min-width: 768px){
+        h2{
+            text-align: center;
+        }
+        .resto-prev__image{
+            height: 250px;
+        }
+    }
+    @media all and (min-width: 992px){
+        @include flex-column;
+        h2{
+            width: 100%;
+        }
+        & > div{
+            @include flex-row;
+            width: 100%;
+            .resto-prev{
+                width: 45%;
+            }
+        }
+    }
 }
 

@@ -6,6 +6,12 @@
         img{
             @include img;
         }
+    }
+    @media all and (min-width: 992px){
+        max-height: 450px;
+        &__image{
+            height: 400px;
+        }
     } 
 }
 
@@ -16,20 +22,23 @@
     top: -50px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    /*.menu-banner{
+        display: none;
+    }*/
     .menu-title{
         display: flex;
         background-color: $background;
         position: relative;
         padding-top: 20px;
     }
+/*--------cf ./components/buttons/like-checkbox ligne 27--------*/    
     .menu-composants{
         padding-bottom: 20px;   
         &__title{
             > div{
                 width: 50px;
                 border-bottom: $color-tertiary 3px solid;
-                margin-bottom: 20px;
-                margin-top: 8px;
+                @include margin-underline;
             }
         }
         &__choice{
@@ -84,6 +93,15 @@
             }
             /*------&__input cf ./components/_buttons ligne 68-----*/
         }
+        @media all and (min-width: 768px){
+            &__title{
+                text-align: center;
+                & > div{
+                    margin: auto;
+                    @include margin-underline;
+                }
+            }
+        }
     }
 }    
 @keyframes menu__item {
@@ -91,4 +109,16 @@
         transform: translateX(-100%);
         opacity: 0;
     } 
-} 
+}
+@media all and (min-width: 992px){
+    .menu-title h2 {
+        margin: auto;
+    }
+    .menu-compo__content--txt h4{
+        padding-left: 100px;
+    }
+    .menu-checkbox{
+        right: 30%;
+        bottom: 20px;
+    }
+}  

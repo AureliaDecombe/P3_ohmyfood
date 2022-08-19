@@ -13,6 +13,7 @@ $input-background: #EAEAEA;
 $footer-background: #353535;
 $btn-background: linear-gradient(170deg, $color-secondary 5%, $color-primary 95%);
 $btn-background--hover: linear-gradient(170deg, transparent, $light-secondary 10%, $light-primary 95%);
+$loader-background: radial-gradient(circle, $color-primary, $color-primary 50%, $color-secondary 75%, $color-primary 75%);
 
 /*----------------------box-shadows-----------------------*/
 $shadow-primary: 2px 2px 10px 1px $background;
