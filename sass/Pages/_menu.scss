@@ -17,23 +17,19 @@
 
 .menu{
     padding: 20px;
-    background-color: $background;
+    background: $background;
     position: relative;
     top: -50px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    /*.menu-banner{
-        display: none;
-    }*/
     .menu-title{
         display: flex;
-        background-color: $background;
         position: relative;
         padding-top: 20px;
     }
 /*--------cf ./components/buttons/like-checkbox ligne 27--------*/    
     .menu-composants{
-        padding-bottom: 20px;   
+        padding-bottom: 20px;  
         &__title{
             > div{
                 width: 50px;
@@ -61,7 +57,6 @@
                 border-radius: 15px;
                 display: flex;
                 overflow: hidden;
-                min-width: 300px;
                 &--txt {
                     width: 100%;
                     display: flex;
@@ -111,6 +106,7 @@
     } 
 }
 @media all and (min-width: 992px){
+.menu{
     .menu-title h2 {
         margin: auto;
     }
@@ -121,4 +117,26 @@
         right: 30%;
         bottom: 20px;
     }
+    .menu-composants{
+        height: 380px;
+        &--primary{
+            background: center no-repeat url("../../images/banners/Bannière-menu--395px__primary.png");
+            & .underline{
+                border-bottom: $color-primary 3px solid;
+            }
+        }
+        &--secondary{
+            background: center no-repeat url(../../images/banners/Bannière-menu--395px__secondary.png);
+            & .underline{
+                border-bottom: $color-secondary 3px solid;
+            }
+        }
+        &--tertiary{
+            background: center no-repeat url(../../images/banners/Bannière-menu--395px__tertiary.png);
+        }
+        & > div{
+            margin-bottom: 30px;
+        }
+    } 
+}
 }  
