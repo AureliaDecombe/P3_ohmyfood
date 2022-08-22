@@ -120,19 +120,19 @@
     .menu-composants{
         height: 380px;
         &--primary{
-            background: center no-repeat url("../../images/banners/menu-banner__primary.png");
+            background: center no-repeat url("../images/banners/menu-banner__primary.png");
             & .underline{
                 border-bottom: $color-primary 3px solid;
             }
         }
         &--secondary{
-            background: center no-repeat url("../../images/banners/menu-banner__secondary.png");
+            background: center no-repeat url("../images/banners/menu-banner__secondary.png");
             & .underline{
                 border-bottom: $color-secondary 3px solid;
             }
         }
         &--tertiary{
-            background: center no-repeat url("../../images/banners/menu-banner__tertiary.png");
+            background: center no-repeat url("../images/banners/menu-banner__tertiary.png");
         }
         & > div{
             margin-bottom: 30px;
