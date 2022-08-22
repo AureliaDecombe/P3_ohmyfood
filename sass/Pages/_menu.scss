@@ -126,13 +126,13 @@
             }
         }
         &--secondary{
-            background: center no-repeat url(../../images/banners/Bannière-menu--395px__secondary.png);
+            background: center no-repeat url("../../images/banners/Bannière-menu--395px__secondary.png");
             & .underline{
                 border-bottom: $color-secondary 3px solid;
             }
         }
         &--tertiary{
-            background: center no-repeat url(../../images/banners/Bannière-menu--395px__tertiary.png);
+            background: center no-repeat url("../../images/banners/Bannière-menu--395px__tertiary.png");
         }
         & > div{
             margin-bottom: 30px;
