@@ -1,14 +1,13 @@
 /*---------------------bouton gnral------------------*/
 .btn {
     > a{
-        display: flex;
+        @include flex-full;
         color: $color-neutral;
         padding: 1em 2.5em;
         font-size: 1.1em;
         text-align: center;
         background: $btn-background;
-        width: min-content;
-        white-space: nowrap;
+        max-width: 300px;
         margin: auto;
         border-radius: 30px;
         box-shadow: rgb(149 157 165 / 40%) 0px 8px 24px;
@@ -40,13 +39,16 @@
             width: 30px;
             height: 30px;
             z-index: 1;
-            cursor: cell;  
-            &:checked ~ .fancy-checkbox--unchecked{
+            cursor: grabbing; 
+            &:hover ~ .fancy-checkbox--unchecked{
                 transition-duration: .5s;
                 opacity: 0;
             }
-            &:checked ~ .fancy-checkbox--checked{
+            &:hover ~ .fancy-checkbox--checked{
                 transition-duration: 1s;
+                opacity: 1;
+            }
+            &:checked ~ .fancy-checkbox--checked{
                 opacity: 1;
             }
         }
@@ -71,13 +73,19 @@
     height: 100%;
     position: absolute;
     cursor: pointer;
-    &:checked ~ .menu-compo__content .menu-compo__content--icone{
+    &:hover ~ .menu-compo__content .menu-compo__content--icone{
         margin-right: 0;
         transition: $trans-primary;
     }            
-    &:checked ~ .menu-compo__content i{
+    &:hover ~ .menu-compo__content i{
         margin-right: 0;
         transition: $trans-primary;
         transform: rotate(360deg);
+    }
+    &:checked ~ .menu-compo__content .menu-compo__content--icone{
+        margin-right: 0;
+    }            
+    &:checked ~ .menu-compo__content i{
+        margin-right: 0;
     }
 }

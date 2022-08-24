@@ -2,6 +2,7 @@ header{
     .logo{
         display: flex;
         padding: 20px 0 10px;
+        overflow: hidden;
         &__title{
             margin: auto;
         }

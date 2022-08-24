@@ -3,9 +3,10 @@
     background-color: $input-background;
     height: 60px;
     box-shadow: $shadow-input;
+    margin: auto;
+    overflow: hidden;
     > input{
-        width: 200px;
-        padding-left: 20px;
+        text-align: center;
         border: none;
         background-color: $input-background;
         font-size: 1.3em;
@@ -25,12 +26,14 @@
         margin-bottom: 0;
         padding-bottom: 0;
         color: $text-alternative;
+        word-break: break-word;
     }
 }
 
 .instructions{
     padding: 50px 25px;
     @include flex-column;
+    overflow: hidden;
     .instructions-card{
         @include flex-basic;
         margin: auto;
@@ -53,14 +56,15 @@
         &__box{
             font-size: 1.2em;
             font-weight: bold;  
-            @include flex-basic;   
+            @include flex-basic;  
+            word-break: break-word; 
             > i{
                 color: $text-alternative;
                 @include instruction-card__typo;
             }
         }
         &:hover{
-            background: lighten($color-secondary, 22%);
+            background: lighten($color-primary, 35%);
             i{
                 color: $color-primary;
             }
