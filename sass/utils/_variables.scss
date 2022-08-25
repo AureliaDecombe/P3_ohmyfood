@@ -28,3 +28,7 @@ $font-logo: 'Shrikhand', sans-serif;
 /*----------------------transitions-----------------------*/
 $trans-primary: all 0.5s ease;
 
+/*----------------------animations-----------------------*/
+$menu-item--duration: 1s;
+$menu-item--number: 3;
+$menu-item--delay: $menu-item--duration / $menu-item--number;

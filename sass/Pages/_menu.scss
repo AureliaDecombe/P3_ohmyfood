@@ -20,6 +20,7 @@
     background: $background;
     position: relative;
     top: -50px;
+    margin-bottom: -50px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     .menu-title{
@@ -29,8 +30,12 @@
     }
 /*--------cf ./components/buttons/like-checkbox ligne 27--------*/    
     .menu-composants{
-        padding-bottom: 20px;  
+        padding-bottom: 20px; 
         &__title{
+<<<<<<< Updated upstream
+=======
+            animation: menu__item .5s ease-in-out both;
+>>>>>>> Stashed changes
             > div{
                 width: 50px;
                 border-bottom: $color-tertiary 3px solid;
@@ -104,6 +109,11 @@
         transform: translateX(-100%);
         opacity: 0;
     } 
+}
+@keyframes menu__compo {
+    0%{
+        opacity: 0;
+    }
 }
 @media all and (min-width: 992px){
 .menu{
