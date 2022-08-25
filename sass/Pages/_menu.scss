@@ -20,6 +20,7 @@
     background: $background;
     position: relative;
     top: -50px;
+    margin-bottom: -50px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     .menu-title{
@@ -30,8 +31,14 @@
 /*--------cf ./components/buttons/like-checkbox ligne 27--------*/    
     .menu-composants{
         padding-bottom: 20px;  
+        animation: menu $menu-opening__duration ease-in-out both;
+        @for $i from 1 through $menu-opening__number {
+            &--#{$i} {
+                animation-delay: $menu-opening__delay * $i;
+            }
+        }
         &__title{
-            animation: menu__item 1s ease-in-out both;
+            animation: menu__item $menu-item__duration ease-in-out both;
             > div{
                 width: 50px;
                 border-bottom: $color-tertiary 3px solid;
@@ -42,15 +49,11 @@
             margin: auto;
             margin-bottom: 15px;
             max-width: 500px;
-            animation: menu__item .5s ease-out both;
-            &--1 {
-                animation-delay: .5s;
-            }
-            &--2 {
-                animation-delay: .75s;
-            }
-            &--3 {
-                animation-delay: 1s;
+            animation: menu__item $menu-item__duration ease-out both;
+            @for $i from 1 through $menu-item__number {
+                &--#{$i} {
+                    animation-delay: $menu-item__delay * $i;
+                 }
             }
             .menu-compo__content{
                 box-shadow: $shadow-secondary;
@@ -106,6 +109,14 @@
         transform: translateY(25%);
         opacity: 0;
     } 
+}
+@keyframes menu {
+    0% {
+        transform: scale(0,.07);
+    }
+    33% {
+        transform: scale(1,.07);
+    }
 }
 @media all and (min-width: 992px){
     .menu{
