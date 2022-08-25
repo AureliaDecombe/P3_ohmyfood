@@ -30,9 +30,9 @@ $trans-primary: all 0.5s ease;
 
 /*----------------------animations-----------------------*/
 $menu-item__number: 3;
-$menu-item__duration: 2s;
-$menu-item__delay: calc($menu-item__duration / $menu-item__number);
+$menu-item__duration: 1.5s;
+$menu-item__delay: calc(($menu-item__duration / $menu-item__number) * 2);
 
 $menu-opening__number: 3;
 $menu-opening__duration: 1s;
-$menu-opening__delay: calc($menu-opening__duration / $menu-opening__number)
+$menu-opening__delay: calc($menu-opening__duration / $menu-opening__number);
