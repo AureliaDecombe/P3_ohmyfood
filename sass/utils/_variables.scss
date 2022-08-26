@@ -29,10 +29,12 @@ $font-logo: 'Shrikhand', sans-serif;
 $trans-primary: all 0.5s ease;
 
 /*----------------------animations-----------------------*/
-$menu-item__number: 3;
-$menu-item__duration: 1.5s;
+$menu-item__number: 9;
+$menu-item__duration: 2.5s;
 $menu-item__delay: calc(($menu-item__duration / $menu-item__number) * 2);
 
 $menu-opening__number: 3;
-$menu-opening__duration: 1s;
-$menu-opening__delay: calc($menu-opening__duration / $menu-opening__number);
+$menu-opening__duration: 1.15s;
+$menu-opening__delay: calc(($menu-opening__duration / $menu-opening__number) * 2.8);
+
+$anim--menu__title: menu__item $menu-item__duration ease-in-out both;

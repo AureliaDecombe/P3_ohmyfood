@@ -67,3 +67,13 @@
     margin-bottom: 20px;
     margin-top: 8px;
 }
+
+/*-------------------------animations----------------------------*/
+@mixin anim--menu__choice {
+    animation: $anim--menu__title;
+    @for $i from 1 through $menu-item__number {
+        &--#{$i} {
+            animation-delay: $menu-item__delay * $i;
+         }
+    }
+}

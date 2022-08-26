@@ -32,13 +32,36 @@
     .menu-composants{
         padding-bottom: 20px;  
         animation: menu $menu-opening__duration ease-in-out both;
-        @for $i from 1 through $menu-opening__number {
+        @for $i from 2 through $menu-opening__number {
             &--#{$i} {
                 animation-delay: $menu-opening__delay * $i;
             }
         }
+        &--1{
+            .menu-composants__title{
+                animation: menu__item $menu-item__duration ease-in-out both;
+            }
+            .menu-composants__choice{
+                @include anim--menu__choice;
+            }
+        }
+        &--2{
+            .menu-composants__title{
+                animation: $anim--menu__title;
+            }
+            .menu-composants__choice{
+                @include anim--menu__choice;
+            }
+        }
+        &--3{
+            .menu-composants__title{
+                animation: $anim--menu__title;
+            }
+            .menu-composants__choice{
+                @include anim--menu__choice;
+            }
+        }
         &__title{
-            animation: menu__item $menu-item__duration ease-in-out both;
             > div{
                 width: 50px;
                 border-bottom: $color-tertiary 3px solid;
@@ -49,12 +72,6 @@
             margin: auto;
             margin-bottom: 15px;
             max-width: 500px;
-            animation: menu__item $menu-item__duration ease-out both;
-            @for $i from 1 through $menu-item__number {
-                &--#{$i} {
-                    animation-delay: $menu-item__delay * $i;
-                 }
-            }
             .menu-compo__content{
                 box-shadow: $shadow-secondary;
                 background: $color-neutral;
@@ -113,9 +130,6 @@
 @keyframes menu {
     0% {
         transform: scale(0,.07);
-    }
-    33% {
-        transform: scale(1,.07);
     }
 }
 @media all and (min-width: 992px){
