@@ -1,5 +1,7 @@
 /*---------------------bouton gnral------------------*/
 .btn {
+    background: $background;
+    padding: 60px;
     > a{
         @include flex-full;
         color: $color-neutral;
@@ -17,8 +19,7 @@
         }
     }
     &--main{
-        background: $background;
-        padding: 60px;
+        padding-top: 0!important;
     }
 }
 
